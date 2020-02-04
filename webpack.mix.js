@@ -8,4 +8,7 @@ mix.js('src/js/app.js', 'public/js')
         files: [
             './public/index.html'
         ]
+    })
+    .options({
+        processCssUrls: false
     });

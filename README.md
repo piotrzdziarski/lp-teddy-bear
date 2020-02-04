@@ -1,8 +1,3 @@
-# Template for simple pages
+# Landing page coded for FireAds
 
 Uses Laravel Mix.
-
-Prepared: 
-- scss
-- js
-- browser-sync
