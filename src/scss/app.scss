@@ -1,9 +1,14 @@
-@import "./demo.scss";
-
-body {
-  margin: 0;
-  padding: 0;
-}
+@import "variables";
+@import "global/buttons";
+@import "global/flex";
+@import "global/headers";
+@import "global/text";
+@import "global/positions";
+@import "components/button-arrowed";
+@import "components/container";
+@import "includes/body";
+@import "includes/nav";
+@import "includes/claim/claim";
 
 * {
   box-sizing: border-box;

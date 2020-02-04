@@ -1,0 +1,39 @@
+.button-arrowed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border: 3px solid transparent;
+  border-radius: 30px;
+  background: $primary;
+  transition: background-color .2s;
+  color: #ffffff;
+  font-family: 'Righteous', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  .wrapper-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    background: #fff;
+  }
+
+  .button-arrowed-text {
+    padding: 0 16px 2px 16px;
+  }
+
+  &:hover {
+    background: darken($primary, 5%);
+  }
+
+  &:focus {
+    outline: none;
+    border: 3px solid darken($primary, 20%);
+  }
+}

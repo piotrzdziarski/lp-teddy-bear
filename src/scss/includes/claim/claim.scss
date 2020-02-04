@@ -1,0 +1,70 @@
+#claim {
+  @import "block-img";
+  @import "block-text";
+  position: relative;
+  padding: 50px 0;
+
+  @media (min-width: 576px) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 40px 0 20px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 992px) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+  }
+
+  .img-left {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    opacity: .75;
+
+    @media (min-width: 992px) {
+      display: block;
+    }
+
+    @media (min-width: 1200px) {
+      opacity: 1;
+    }
+  }
+
+  .img-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    height: 100%;
+    opacity: .75;
+
+    @media (min-width: 992px) {
+    }
+
+    @media (min-width: 1200px) {
+      opacity: 1;
+    }
+  }
+
+  .gap {
+    @media (min-width: 992px) {
+      order: 2;
+      width: 50px;
+    }
+  }
+}

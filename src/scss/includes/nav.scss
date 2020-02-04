@@ -1,0 +1,40 @@
+#nav {
+  padding: 15px 0;
+  box-shadow: -65px -30px 106px rgba(116, 0, 26, 0.23);
+  background: #fff;
+
+  @media (min-width: 768px) {
+    padding: unset;
+    height: 81px;
+  }
+
+  .item {
+    padding-bottom: 15px;
+
+    @media (min-width: 768px) {
+      padding-bottom: unset;
+    }
+
+    &:last-child {
+      padding-bottom: unset;
+    }
+  }
+
+  .gap {
+    @media (min-width: 768px) {
+      width: 50px;
+    }
+  }
+
+  .text {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+
+    @media (min-width: 576px) {
+      font-size: 16px;
+    }
+  }
+}

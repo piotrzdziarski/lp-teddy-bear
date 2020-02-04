@@ -7,9 +7,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel Mix Template</title>
     <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Righteous&display=swap&subset=latin-ext"
+          rel="stylesheet">
 </head>
 <body>
-<img src="img/laravel.png" alt="Laravel Mix Template">
+<nav id="nav" class="nav flex-centered-column-md-flex-row">
+    <div class="container md-flex-centered">
+        <div class="item flex-centered">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="28" height="35" viewBox="0 0 28 35">
+                <path fill="#f33f65"
+                      d="M25.19 14.652c-.191.07-.373.167-.537.29-.85.63-2.433 2.356-2.433 2.356.049-.047-1.14 1.116-2.23 2.19a.484.484 0 0 1-.824-.348V5.228c0-1.363-1.091-2.304-2.412-2.024-1.054.224-1.616 1.215-1.616 2.4l.01 10.5-1.607.005V1.897c0-1.301-1.034-2.155-2.28-1.824-.854.226-1.254 1.04-1.254 2.064v13.991l-1.602.004-.01-11.368c0-1.136-.53-2.138-1.653-2.172-1.168-.035-1.73.955-1.73 2.127L4.995 16.15l-1.566.004V8.66c0-1.18-.543-2.072-1.717-2.072C.543 6.59 0 7.481 0 8.661l.001 16.634C.587 33.846 5.371 35 10.373 35c4.144 0 7.459-2.077 9.294-5.397.236-.385.875-1.4 1.632-2.602 1.077-1.709 2.054-3.238 2.74-4.322.904-1.429 1.731-2.545 2.755-3.889.285-.373.521-.674.634-.799.308-.34.511-.763.572-1.22v-.086c0-1.65-1.277-2.6-2.81-2.033z" />
+            </svg>
+            <span class="text">Ręczne wykonanie</span>
+        </div>
+        <div class="gap"></div>
+        <div class="item flex-centered">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="41" height="33" viewBox="0 0 41 33">
+                <path fill="#f33f65"
+                      d="M.45.445C.75.148 1.107 0 1.518 0h24.297c.41 0 .767.148 1.067.445.3.297.45.649.45 1.055V6h3.798c.427 0 .89.101 1.388.304.498.204.897.453 1.198.75l4.698 4.64c.205.204.383.438.534.704.15.265.26.504.332.715.071.21.123.5.154.867s.052.637.06.81c.007.17.007.467 0 .889-.008.422-.013.696-.013.82V24c.412 0 .768.149 1.068.446.3.296.45.649.45 1.055 0 .234-.03.441-.094.62a.892.892 0 0 1-.32.435c-.15.11-.281.198-.392.269-.11.07-.297.117-.557.14l-.534.048a8.085 8.085 0 0 1-.605 0 43.594 43.594 0 0 0-.534-.013h-1.519c0 1.657-.593 3.07-1.779 4.243C33.479 32.413 32.047 33 30.37 33c-1.676 0-3.108-.587-4.294-1.758-1.187-1.172-1.78-2.586-1.78-4.243h-9.11c0 1.657-.594 3.07-1.78 4.243C12.22 32.413 10.788 33 9.11 33s-3.108-.587-4.294-1.758c-1.187-1.172-1.78-2.586-1.78-4.243-.047 0-.225.005-.533.013a8.09 8.09 0 0 1-.605 0 59.737 59.737 0 0 1-.535-.048c-.26-.023-.446-.07-.557-.14-.11-.07-.241-.16-.391-.27a.89.89 0 0 1-.32-.433A1.851 1.851 0 0 1 0 25.5v-24C0 1.094.15.742.45.445zM28.235 29.11c.601.594 1.313.891 2.136.891.822 0 1.534-.297 2.135-.891.601-.593.902-1.297.902-2.109s-.301-1.516-.902-2.11c-.6-.593-1.313-.89-2.136-.89-.822 0-1.534.296-2.135.89-.601.594-.902 1.297-.902 2.11 0 .812.301 1.516.902 2.109zm-.902-14.11h9.112v-.702a.697.697 0 0 0-.214-.516l-4.626-4.57a.716.716 0 0 0-.523-.21h-3.749zM6.976 29.11c.6.594 1.313.891 2.135.891.823 0 1.535-.297 2.136-.891.601-.593.902-1.297.902-2.109s-.3-1.516-.902-2.11c-.6-.593-1.313-.89-2.136-.89-.822 0-1.534.296-2.135.89-.6.594-.902 1.297-.902 2.11 0 .812.3 1.516.902 2.109z" />
+            </svg>
+            <span class="text">Bezpieczna i szybka wysyłka</span>
+        </div>
+    </div>
+</nav>
+<main>
+    <section id="claim">
+        <img class="img-left" src="img/claim-background-left.png" alt="Roses at left side PNG">
+        <div class="container flex-centered-column-lg-flex-row position-relative">
+            <div class="block-img">
+                <img class="img" src="img/claim-bears.png" alt="Teddy bears from roses">
+                <div class="block-img-text">
+                    <div class="flex-centered">
+                        <div class="price">
+                            <div class="price-crossed">
+                                49zł
+                            </div>
+                            <div class="price-new">
+                                0zł!
+                            </div>
+                        </div>
+                        <div class="text-relative">
+                            * przy zakupie misia
+                            <div class="gap-text">
+                                pudełko otrzymasz gratis
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="block-text">
+                <h1>
+                    <span class="header">Ręcznie wykonane misie</span>
+                    <span class="subheader">z ponad <span class="text-primary">500</span> kwiatków róż</span>
+                </h1>
+                <button class="button-arrowed">
+                    <span class="wrapper-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="19" viewBox="0 0 12 19">
+                            <path fill="#f33f65" d="M0 2.24L7.42 9.5 0 16.76 2.29 19 12 9.5 2.29 0z" />
+                        </svg>
+                    </span>
+                    <span class="button-arrowed-text">
+                        Wybierz misia
+                    </span>
+                </button>
+            </div>
+        </div>
+        <img class="img-right" src="img/claim-background-right.png" alt="Roses at right side PNG">
+    </section>
+</main>
 <script src="js/app.js"></script>
 </body>
 </html>
