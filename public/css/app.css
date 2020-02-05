@@ -111,6 +111,10 @@ h6 {
   color: #f33f65;
 }
 
+.fw-600 {
+  font-weight: 600;
+}
+
 .fw-700 {
   font-weight: 700;
 }
@@ -371,6 +375,7 @@ body {
 }
 
 #claim .text-relative {
+  margin-top: 30px;
   margin-left: 5px;
   max-width: 183px;
   color: #000000;
@@ -722,6 +727,148 @@ body {
   #cards .block-text {
     padding-right: 18px;
     width: calc(100% - 127px);
+  }
+}
+
+#about {
+  position: relative;
+  padding: 50px 0;
+}
+
+@media (min-width: 992px) {
+  #about {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about {
+    padding: 30px 0 60px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  #about .container {
+    max-width: 1270px;
+  }
+}
+
+#about .rose-petals {
+  display: none;
+  position: absolute;
+  width: 150px;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  #about .rose-petals {
+    display: block;
+  }
+}
+
+@media (min-width: 1600px) {
+  #about .rose-petals {
+    width: auto;
+  }
+}
+
+#about .rose-petals-left {
+  top: -50px;
+  left: 0;
+}
+
+@media (min-width: 1600px) {
+  #about .rose-petals-left {
+    top: -80px;
+    left: -10px;
+  }
+}
+
+#about .rose-petals-right {
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 1600px) {
+  #about .rose-petals-right {
+    top: 50px;
+    right: -100px;
+  }
+}
+
+#about .block-text {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  #about .block-text {
+    width: calc(50% - 205px);
+  }
+}
+
+@media (min-width: 1200px) {
+  #about .block-text {
+    width: calc(50% - 240px);
+  }
+}
+
+@media (min-width: 1600px) {
+  #about .block-text {
+    width: calc(50% - 280px);
+  }
+}
+
+@media (min-width: 992px) {
+  #about .gap {
+    width: 40px;
+  }
+}
+
+#about .header {
+  color: #f33f65;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+#about .p {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+}
+
+#about .img {
+  display: block;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 487px;
+  max-height: 508px;
+}
+
+@media (min-width: 768px) {
+  #about .img {
+    margin: 40px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  #about .img {
+    width: 330px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about .img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #about .img {
+    width: 480px;
   }
 }
 
