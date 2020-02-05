@@ -1,0 +1,100 @@
+#cards {
+  padding: 50px 0;
+
+  .container {
+    position: relative;
+    z-index: 3;
+
+    @media (min-width: 1200px) {
+      margin-top: -110px;
+    }
+
+    @media (min-width: 1600px) {
+      max-width: 1300px;
+    }
+  }
+
+  .card {
+    margin-bottom: 40px;
+    border-radius: 66px;
+    background: #fff;
+
+    @media (min-width: 992px) {
+      margin-bottom: unset;
+      width: calc(33.33% - 13.33px);
+    }
+
+    @media (min-width: 1200px) {
+      padding: 0 10px;
+      height: 120px;
+      box-shadow: 0 0 84px rgba(239, 132, 156, 0.31);
+    }
+
+    @media (min-width: 1600px) {
+      width: calc(33.33% - 30px);
+      height: 132px;
+    }
+
+    &:last-child {
+      margin-bottom: unset;
+    }
+  }
+
+  .gap {
+    @media (min-width: 768px) {
+      width: 20px;
+    }
+
+    @media (min-width: 1600px) {
+      width: 45px;
+    }
+  }
+
+  .img-wrapper {
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    background: $primary;
+
+    @media (min-width: 992px) {
+      width: 92px;
+      height: 92px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 102px;
+      height: 102px;
+    }
+
+    @media (min-width: 1600px) {
+      width: 112px;
+      height: 112px;
+    }
+  }
+
+  .gap-inner {
+    width: 15px;
+  }
+
+  .block-text {
+    width: calc(100% - 127px);
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+
+    @media (min-width: 992px) {
+      width: calc(100% - 107px);
+    }
+
+    @media (min-width: 1200px) {
+      padding-right: 10px;
+      width: calc(100% - 117px);
+    }
+
+    @media (min-width: 1600px) {
+      padding-right: 18px;
+      width: calc(100% - 127px);
+    }
+  }
+}

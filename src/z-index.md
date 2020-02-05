@@ -1,2 +1,4 @@
 # claim background: 0
-# claim front: 1
+# claim rose petals: 1
+# claim front: 2
+# cards: 3~~~~
