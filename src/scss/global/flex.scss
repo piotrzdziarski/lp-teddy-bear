@@ -8,6 +8,12 @@
   align-items: center;
 }
 
+.flex-started {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .flex-centered-column-md-flex-row {
   display: flex;
   justify-content: center;

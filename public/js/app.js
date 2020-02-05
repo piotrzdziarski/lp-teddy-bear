@@ -91,9 +91,26 @@
   !*** ./src/js/app.js ***!
   \***********************/
 /*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ./includes/video-control */ "./src/js/includes/video-control.js");
+
+/***/ }),
+
+/***/ "./src/js/includes/video-control.js":
+/*!******************************************!*\
+  !*** ./src/js/includes/video-control.js ***!
+  \******************************************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
+var video = document.getElementById('video');
+var videoPoster = document.getElementById('video-poster');
 
+videoPoster.onclick = function () {
+  video.play();
+  videoPoster.style.display = 'none';
+};
 
 /***/ }),
 
