@@ -878,6 +878,13 @@ body {
   background: #f33f65;
   color: #fff;
   text-align: center;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  #perfume {
+    overflow-x: unset;
+  }
 }
 
 @media (min-width: 768px) {
@@ -909,20 +916,14 @@ body {
 }
 
 #perfume .block-text {
-  margin-top: -40px;
+  margin: -40px auto 0 auto;
   width: 100%;
   max-width: 320px;
 }
 
-@media (min-width: 768px) {
-  #perfume .block-text {
-    margin-top: -40px;
-  }
-}
-
 @media (min-width: 992px) {
   #perfume .block-text {
-    margin-top: unset;
+    margin: unset;
   }
 }
 
@@ -948,7 +949,7 @@ body {
 }
 
 #perfume .img-left {
-  margin-left: 50px;
+  transform: translateX(50px);
 }
 
 @media (min-width: 992px) {
@@ -996,6 +997,217 @@ body {
   margin-top: 30px;
 }
 
+#buy-now {
+  padding: 50px 0;
+  background: url("../img/buy-now.jpg");
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  #buy-now {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  #buy-now {
+    padding: 70px 0 60px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #buy-now {
+    padding: 80px 0 70px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  #buy-now {
+    padding: 90px 0 70px 0;
+  }
+}
+
+#buy-now .h2 {
+  margin-bottom: 40px;
+  color: #f33f65;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  #buy-now .h2 {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  #buy-now .h2 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  #buy-now .h2 {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #buy-now .h2 {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #buy-now .h2 {
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  #buy-now .md-row {
+    margin-bottom: 60px;
+  }
+}
+
+#buy-now .md-row:last-child {
+  margin-bottom: unset;
+}
+
+#buy-now .item {
+  max-width: 362px;
+  margin: 0 auto 50px auto;
+}
+
+@media (min-width: 768px) {
+  #buy-now .item {
+    margin: unset;
+  }
+}
+
+#buy-now .item-last {
+  margin-bottom: unset;
+}
+
+@media (min-width: 768px) {
+  #buy-now .gap {
+    width: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  #buy-now .gap {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #buy-now .gap {
+    width: 195px;
+  }
+}
+
+#buy-now .wrapper-img {
+  margin: 0 auto;
+  border: 1px solid #ffbecd;
+  padding: 20px;
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+}
+
+#buy-now .img {
+  width: 100%;
+  height: 100%;
+}
+
+#buy-now .wrapper-header {
+  margin-top: 22px;
+  color: #f33f65;
+  text-align: center;
+}
+
+#buy-now .header {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+#buy-now .subheader {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#buy-now .wrapper-price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#buy-now .price {
+  color: #f33f65;
+  font-size: 37px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#buy-now .price-crossed {
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1.9px;
+}
+
+#buy-now .price-crossed::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+
+#buy-now .p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 1.4px;
+  text-align: justify;
+}
+
+#buy-now .btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px 0;
+  transition: background-color .2s;
+  background: #f33f65;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+#buy-now .btn:hover {
+  background: #f22752;
+}
+
+#buy-now .btn:focus {
+  outline: 2px solid #f00f3f;
+}
+
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }

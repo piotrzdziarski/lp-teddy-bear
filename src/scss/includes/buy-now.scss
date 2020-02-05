@@ -1,0 +1,183 @@
+#buy-now {
+  padding: 50px 0;
+  background: url("../img/buy-now.jpg");
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: 992px) {
+    padding: 70px 0 60px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 80px 0 70px 0;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 90px 0 70px 0;
+  }
+
+  .h2 {
+    margin-bottom: 40px;
+    color: $primary;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px;
+    text-align: center;
+
+    @media (min-width: 576px) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: 992px) {
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: 1600px) {
+      margin-bottom: 90px;
+    }
+  }
+
+  .md-row {
+    @media (min-width: 768px) {
+      margin-bottom: 60px;
+    }
+
+    &:last-child {
+      margin-bottom: unset;
+    }
+  }
+
+  .item {
+    max-width: 362px;
+    margin: 0 auto 50px auto;
+
+    @media (min-width: 768px) {
+      margin: unset;
+    }
+  }
+
+  .item-last {
+    margin-bottom: unset;
+  }
+
+  .gap {
+    @media (min-width: 768px) {
+      width: 30px;
+    }
+
+    @media (min-width: 992px) {
+      width: 100px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 195px;
+    }
+  }
+
+  .wrapper-img {
+    margin: 0 auto;
+    border: 1px solid #ffbecd;
+    padding: 20px;
+    width: 100%;
+    max-width: 360px;
+    background: #fff;
+  }
+
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .wrapper-header {
+    margin-top: 22px;
+    color: $primary;
+    text-align: center;
+  }
+
+  .header {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+  }
+
+  .subheader {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .wrapper-price {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .price {
+    color: $primary;
+    font-size: 37px;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+
+  .price-crossed {
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 8px;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1.9px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 1px;
+      background: #000;
+
+    }
+  }
+
+  .p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 1.4px;
+    text-align: justify;
+  }
+
+  .btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px 0;
+    transition: background-color .2s;
+    background: $primary;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: darken($primary, 5%);
+    }
+
+    &:focus {
+      outline: 2px solid darken($primary, 10%);
+    }
+  }
+}
