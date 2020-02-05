@@ -69,6 +69,7 @@
     right: 0;
     z-index: 0;
     height: 100%;
+    transform: scaleX(-1);
     opacity: .75;
 
     @media (min-width: 992px) {
