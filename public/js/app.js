@@ -95,6 +95,8 @@
 
 __webpack_require__(/*! ./includes/video-control */ "./src/js/includes/video-control.js");
 
+__webpack_require__(/*! ./services/smooth-scrolling-local-anchors */ "./src/js/services/smooth-scrolling-local-anchors.js");
+
 /***/ }),
 
 /***/ "./src/js/includes/video-control.js":
@@ -111,6 +113,24 @@ videoPoster.onclick = function () {
   video.play();
   videoPoster.style.display = 'none';
 };
+
+/***/ }),
+
+/***/ "./src/js/services/smooth-scrolling-local-anchors.js":
+/*!***********************************************************!*\
+  !*** ./src/js/services/smooth-scrolling-local-anchors.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
 
 /***/ }),
 
